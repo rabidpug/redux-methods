@@ -1,0 +1,15 @@
+{
+  "git.ignoreLimitWarning": true,
+  "files.exclude": {
+    "**coverage": false,
+    "**dist": false,
+    "**es": false,
+    "**lib": false,
+    "**yarn.lock": false,
+    "**yarn-error.log": false,
+    "**.vscode": false,
+    "**node_modules": false,
+    "**.jenkins": true,
+    "**LICENSE": true
+  }
+}
