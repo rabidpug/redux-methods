@@ -1,6 +1,6 @@
 {
   "name": "redux-methods",
-  "version": "1.1.0",
+  "version": "1.1.1-alpha.0",
   "description": "Generate redux action types for common actions (methods) you define, eg set, toggle, add",
   "main": "lib/index.js",
   "module": "es/index.js",
