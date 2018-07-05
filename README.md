@@ -98,15 +98,16 @@ _Methods should be defined in camel case, and not conflict with any properties i
  * @description - each action method is called with the below, and must return
  * the new value for the slice
  * @param {*} payload - The payload provided to the action method creator
- * @param {*} slice - the slice of state provided by the path of the action
- * method creator
- * @param {*} initial - the slice of initial state provided by the path of the
- * action method creator
+ * @param {*} slice - reference to the slice of state provided by the path of the action
+ * method creator. Mutation should be avoided.
+ * @param {*} initial - reference to the slice of initial state provided by the path of the
+ * action method creator. Mutation should be avoided.
  */
 
 export const setValue = payload => payload;
 export const increment = (payload, slice) => slice + payload;
 export const decrement = (payload, slice) => slice - payload;
+export const addById = (payload, slice) => ({ ...slice, [payload.id]: payload });
 export const reset = (payload, slice, initial) => initial;
 ```
 
