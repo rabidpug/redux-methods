@@ -61,7 +61,7 @@
     "build:es": "cross-env BABEL_ENV=es babel -d es src --ignore '**/*.test.*'",
     "build:flowcjs": "flow-copy-source -v -i '**/*.test.*' src lib",
     "build:flowes": "flow-copy-source -v -i '**/*.test.*' src es",
-    "test": "run-p clean test:*",
+    "test": "run-p test:*",
     "test:lint": "eslint \"src/**/*.js\"",
     "test:flow": "flow",
     "test:jest": "jest --coverage",

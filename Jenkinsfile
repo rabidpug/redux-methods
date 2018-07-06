@@ -16,6 +16,7 @@ agent none
                 echo 'installing dependencies'
                 sh 'yarn install --ignore-scripts --check-files --non-interactive'
                 echo 'running tests'
+                sh 'yarn clean'
                 sh 'yarn test:lint'
                 sh 'yarn test:flow'
                 sh 'yarn test:jest'
