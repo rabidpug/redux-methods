@@ -14,7 +14,7 @@ agent none
             steps {
                 echo 'Beginning testing phase...'
                 echo 'installing dependencies'
-                sh 'yarn install --ignore-scripts'
+                sh 'yarn install --ignore-scripts --check-files --non-interactive'
                 echo 'running tests'
                 sh 'yarn test:lint'
                 sh 'yarn test:flow'
